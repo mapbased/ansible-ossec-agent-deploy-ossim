@@ -7,5 +7,5 @@
 
 - name: add agents from template to ossec server
   shell: >
-    /var/ossec/bin/manage_agents -f /add_agent
+    /var/ossec/bin/manage_agents -f ../add_agent
   connection: 'local'
