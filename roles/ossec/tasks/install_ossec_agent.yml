@@ -34,7 +34,7 @@
   register: keys
 
 - shell: >
-     grep "{{ansible_default_ipv4.address}}" /tmp/client.keys  > /var/ossec/etc/client.keys
+     grep "{{ansible_default_ipv4.address}} " /tmp/client.keys  > /var/ossec/etc/client.keys
   sudo: yes
   when: keys.changed
   notify: restart ossec
